@@ -49,13 +49,12 @@ binds {
     
     F1                                  allow-when-locked=true { spawn-sh "brightnessctl --device=intel_backlight set 10%-"; }
     F2                                  allow-when-locked=true { spawn-sh "brightnessctl --device=intel_backlight set +10%"; }
-        
+
     // tablet buttons (this is so silly please change this -- it works for me >.<)
     XF86AudioRaiseVolume                repeat=false { spawn-sh "niri msg action toggle-overview && eww kill && eww daemon"; }
     XF86AudioLowerVolume                allow-when-locked=true { spawn-sh "eww open --toggle keyboard && eww close keyboard_shift"; }
 
     // ─── audio ───
-
     F6                                  allow-when-locked=true { spawn-sh "wpctl set-volume 63 0.1+"; }
     F5                                  allow-when-locked=true { spawn-sh "wpctl set-volume 63 0.1-"; }
     F4                                  allow-when-locked=true { spawn-sh "wpctl set-mute 63 toggle"; }
@@ -163,16 +162,13 @@ binds {
 
     // ─── power menu ───
     CTRL+ALT+DELETE                     { quit; } 
-    // MOD+ESCAPE                          { spawn-sh "~/.config/waybar/scripts/power-menu.sh"; }
-    Mod+Escape                           { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
+    Mod+Escape                          { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
     MOD+O                               repeat=false { toggle-overview; }
 }
 
 // ────────────── startup ──────────────
-    spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &" // Polkit
-    // spawn-sh-at-startup "swww-daemon" // Wallpaper daemon
-    // spawn-sh-at-startup "swww img -t none ~/Pictures/Wallpapers/angel-ascii.png" // "aki-ascii", "angel-ascii"
-    // spawn-sh-at-startup "waybar" // Launch waybar
+    // NOTE: noctalia also has a polkit agent mby get that one instead. its in plugins. i cba to swap. 
+    spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &" 
     spawn-at-startup "qs" "-c" "noctalia-shell"
     spawn-sh-at-startup "eww daemon"
 
@@ -271,6 +267,7 @@ binds {
     hotkey-overlay {
         skip-at-startup
     }
+
     debug {
         // Allows notification actions and window activation from Noctalia.
         honor-xdg-activation-with-invalid-serial
