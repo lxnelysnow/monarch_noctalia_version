@@ -1,0 +1,598 @@
+; in the spirit of eww and yuck this has been written such that it induces disgust (nausea, perhaps) in the reader :3
+
+(defwidget keyboard_box []
+  ; box with all lines 
+  (box :height "500" :width "2130" :orientation "v" :valign "start" :class "userinfo-parent"
+    ; 0 - box with 1234567890 line
+    (box :height "100" :width "1450" :halign "center" :valign "center" :class "userinfo-child"
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype \\\`" :class "button"
+          (label :class "label"  :text "`")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype 1" :class "button"
+          (label :class "label"  :text "1")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype 2"  :class "button"
+          (label :class "label"  :text "2")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype 3"  :class "button"
+          (label :class "label"  :text "3")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype 4"  :class "button"
+          (label :class "label"  :text "4")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype 5"  :class "button"
+          (label :class "label"  :text "5")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype 6"  :class "button"
+          (label :class "label"  :text "6")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype 7"  :class "button"
+          (label :class "label"  :text "7")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype 8"  :class "button"
+          (label :class "label"  :text "8")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype 9"  :class "button"
+          (label :class "label"  :text "9")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype 0"  :class "button"
+          (label :class "label"  :text "0")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype -k minus"  :class "button"
+          (label :class "label"  :text "-")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype ="  :class "button"
+          (label :class "label"  :text "=")
+        )
+      )
+    )
+    ; 1 - box with qwertyuiop line
+    (box :height "100" :width "1600" :halign "center" :valign "center" :class "userinfo-child"
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype -k tab" :class "button"
+          (label :class "label"  :text "tab")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype q" :class "button"
+          (label :class "label"  :text "q")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype w"  :class "button"
+          (label :class "label"  :text "w")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype e"  :class "button"
+          (label :class "label"  :text "e")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype r"  :class "button"
+          (label :class "label"  :text "r")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype t"  :class "button"
+          (label :class "label"  :text "t")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype y"  :class "button"
+          (label :class "label"  :text "y")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype u"  :class "button"
+          (label :class "label"  :text "u")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype i"  :class "button"
+          (label :class "label"  :text "i")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype o"  :class "button"
+          (label :class "label"  :text "o")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype p"  :class "button"
+          (label :class "label"  :text "p")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype ["  :class "button"
+          (label :class "label"  :text "[")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype ]"  :class "button"
+          (label :class "label"  :text "]")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype -k backspace"  :class "button"
+          (label :class "label"  :text "back")
+        )
+      )
+    )
+    ; 2 - box with asdfghjkl line 
+    (box :height "100" :width "1600" :halign "center" :valign "center" :class "userinfo-child"
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "eww open keyboard_shift" :class "button"
+          (label :class "label"  :text "caps")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype a" :class "button"
+          (label :class "label"  :text "a")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype s"  :class "button"
+          (label :class "label"  :text "s")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype d"  :class "button"
+          (label :class "label"  :text "d")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype f"  :class "button"
+          (label :class "label"  :text "f")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype g"  :class "button"
+          (label :class "label"  :text "g")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype h"  :class "button"
+          (label :class "label"  :text "h")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype j"  :class "button"
+          (label :class "label"  :text "j")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype k"  :class "button"
+          (label :class "label"  :text "k")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype l"  :class "button"
+          (label :class "label"  :text "l")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype \\\;"  :class "button"
+          (label :class "label"  :text ";")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype \\\'"  :class "button"
+          (label :class "label"  :text "'")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype \\\#"  :class "button"
+          (label :class "label"  :text "#")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype -k return"  :class "button"
+          (label :class "label"  :text "rtrn")
+        )
+      )
+    )
+    ; 3 - box with zxcvbnm line 
+    (box :height "100" :width "1450" :halign "center" :valign "center" :class "userinfo-child"
+      ; shift key
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "eww open keyboard_shift" :class "button"
+          (label :class "label"  :text "^")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype \\" :class "button"
+          (label :class "label"  :text "\\\\")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype z" :class "button"
+          (label :class "label"  :text "z")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype x"  :class "button"
+          (label :class "label"  :text "x")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype c"  :class "button"
+          (label :class "label"  :text "c")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype v"  :class "button"
+          (label :class "label"  :text "v")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype b"  :class "button"
+          (label :class "label"  :text "b")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype n"  :class "button"
+          (label :class "label"  :text "n")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype m"  :class "button"
+          (label :class "label"  :text "m")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype ,"  :class "button"
+          (label :class "label"  :text ",")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype ."  :class "button"
+          (label :class "label"  :text ".")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype /"  :class "button"
+          (label :class "label"  :text "/")
+        )
+      )
+      ; shift key
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "eww close keyboard ; eww open keyboard_shift" :class "button"
+          (label :class "label"  :text "^")
+        )
+      )
+    )
+    ; 4 - box with spacebar and stuff line 
+    (box :height "100" :width "1450" :halign "center" :valign "center" :class "userinfo-child"
+      (box :height "100" :width "710" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype -k space"  :class "button"
+          (label :class "label"  :text "spacebar")
+        )
+      )
+    )
+  )
+)
+
+; shift key active 
+(defwidget shift_box []
+  ; box with all lines 
+  (box :height "500" :width "2130" :orientation "v" :valign "start" :class "userinfo-parent"
+    ; 0 - box with 1234567890 line
+    (box :height "100" :width "1450" :halign "center" :valign "center" :class "userinfo-child"
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype \\\|" :class "button"
+          (label :class "label"  :text "|")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype !" :class "button"
+          (label :class "label"  :text "!")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype \\\""  :class "button"
+          (label :class "label"  :text "\"")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype €"  :class "button"
+          (label :class "label"  :text "€")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype $"  :class "button"
+          (label :class "label"  :text "$")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype %"  :class "button"
+          (label :class "label"  :text "%")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype ^"  :class "button"
+          (label :class "label"  :text "^")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype \\\&"  :class "button"
+          (label :class "label"  :text "&")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype \\\*"  :class "button"
+          (label :class "label"  :text "*")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype \\\("  :class "button"
+          (label :class "label"  :text "(")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype \\\)"  :class "button"
+          (label :class "label"  :text ")")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype _"  :class "button"
+          (label :class "label"  :text "_")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype +"  :class "button"
+          (label :class "label"  :text "+")
+        )
+      )
+    )
+    ; 1 - box with qwertyuiop line
+    (box :height "100" :width "1500" :halign "center" :valign "center" :class "userinfo-child"
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype -k tab" :class "button"
+          (label :class "label"  :text "tab")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype Q" :class "button"
+          (label :class "label"  :text "Q")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype W"  :class "button"
+          (label :class "label"  :text "W")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype E"  :class "button"
+          (label :class "label"  :text "E")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype R"  :class "button"
+          (label :class "label"  :text "R")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype T"  :class "button"
+          (label :class "label"  :text "T")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype Y"  :class "button"
+          (label :class "label"  :text "Y")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype U"  :class "button"
+          (label :class "label"  :text "U")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype I"  :class "button"
+          (label :class "label"  :text "I")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype O"  :class "button"
+          (label :class "label"  :text "O")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype P"  :class "button"
+          (label :class "label"  :text "P")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype {"  :class "button"
+          (label :class "label"  :text "{")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype }"  :class "button"
+          (label :class "label"  :text "}")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype -k backspace"  :class "button"
+          (label :class "label"  :text "back")
+        )
+      )
+    )
+    ; 2 - box with asdfghjkl line 
+    (box :height "100" :width "1500" :halign "center" :valign "center" :class "userinfo-child"
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "eww close keyboard_shift" :class "button"
+          (label :class "label"  :text "caps")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype A" :class "button"
+          (label :class "label"  :text "A")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype S"  :class "button"
+          (label :class "label"  :text "S")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype D"  :class "button"
+          (label :class "label"  :text "D")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype F"  :class "button"
+          (label :class "label"  :text "F")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype G"  :class "button"
+          (label :class "label"  :text "G")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype H"  :class "button"
+          (label :class "label"  :text "H")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype J"  :class "button"
+          (label :class "label"  :text "J")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype K"  :class "button"
+          (label :class "label"  :text "K")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype L"  :class "button"
+          (label :class "label"  :text "L")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype :"  :class "button"
+          (label :class "label"  :text ":")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype @"  :class "button"
+          (label :class "label"  :text "@")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype \\\~"  :class "button"
+          (label :class "label"  :text "~")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype -k return"  :class "button"
+          (label :class "label"  :text "rtrn")
+        )
+      )
+    )
+    ; 3 - box with zxcvbnm line 
+    (box :height "100" :width "1450" :halign "center" :valign "center" :class "userinfo-child"
+      ; shift key
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "eww close keyboard_shift" :class "button"
+          (label :class "icon-label"  :text "⨯")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype \\\|" :class "button"
+          (label :class "label"  :text "|")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype Z" :class "button"
+          (label :class "label"  :text "Z")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype X"  :class "button"
+          (label :class "label"  :text "X")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype C"  :class "button"
+          (label :class "label"  :text "C")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype V"  :class "button"
+          (label :class "label"  :text "V")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype B"  :class "button"
+          (label :class "label"  :text "B")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype N"  :class "button"
+          (label :class "label"  :text "N")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype M"  :class "button"
+          (label :class "label"  :text "M")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype \\\<"  :class "button"
+          (label :class "label"  :text "<")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype \\\>"  :class "button"
+          (label :class "label"  :text ">")
+        )
+      )
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype ?"  :class "button"
+          (label :class "label"  :text "?")
+        )
+      )
+      ; shift key
+      (box :height "100" :width "113" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "eww close keyboard_shift && eww open keyboard" :class "button"
+          (label :class "icon-label"  :text "⨯")
+        )
+      )
+    )
+    ; 4 - box with spacebar and stuff line 
+    (box :height "100" :width "1750" :halign "center" :valign "center" :class "userinfo-child"
+      (box :height "100" :width "710" :halign "center" :valign "center" :class "userinfo-child"
+        (button :onclick "wtype -k space"  :class "button"
+          (label :class "label"  :text "spacebar")
+        )
+      )
+    )
+  )
+)

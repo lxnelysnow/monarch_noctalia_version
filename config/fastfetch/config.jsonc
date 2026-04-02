@@ -1,0 +1,100 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "color": {
+      "1":"white",
+      "2":"white"
+    },
+    "width": 17,
+    "source": "arch",
+    "type": "auto",
+    "padding": {
+        "top": 0,
+        "left": 2
+    }
+  },
+  "display":{
+    "separator": " "
+  },
+  "modules": [
+    {"type":"custom", "keyColor": "white", "key":"————————————————————————————————————————————————————————————————————————"},
+    {
+      "type": "title",
+      "format": "{user-name}",
+      "key": "\ue602 prfil \uf2bd  ",
+      "keyColor": "white"
+    },
+    {"type":"custom", "keyColor": "white", "key":"————————————————————————————————————————————————————————————————————————"},
+    {
+      "type": "host",
+      "format": "{2}",
+      "key": "\ue602 host! 󰇅  ",
+      "keyColor": "white"
+    },
+    {
+      "type": "os",
+      "format": "{pretty-name}",
+      "key": "\ue602 opsys \udb81\udc93  ",
+      "keyColor": "white"
+    },
+    {
+      "type": "kernel",
+      "key": "\ue602 kernl \uf4bc  ",
+      "keyColor": "white"
+    }, 
+    {"type":"custom", "keyColor": "white", "key":"————————————————————————————————————————————————————————————————————————"},
+    {
+      "type": "wm",
+      "format": "{pretty-name}",
+      "key": "\ue602 wmngr \udb80\udf79  ",
+      "keyColor": "white"
+    },
+    {
+      "type": "terminal",
+      "format": "{pretty-name} ᓚᘏᗢ",
+      "key": "\ue602 trmal \ue795  ",
+      "keyColor": "white"
+    },
+    {
+      "type": "shell",
+      "format": "{pretty-name} ><>",
+      "key": "\ue602 shell \ue691  ",
+      "keyColor": "white"
+    },
+    {"type":"custom", "keyColor": "white", "key":"————————————————————————————————————————————————————————————————————————"},
+    {
+      "type": "cpu",
+      "format": "",
+      "key": "\ue602 cntrl \uf4bc  ",
+      "keyColor": "white"
+    },
+    {
+      "type": "gpu",
+      "format": "",
+      "key": "\ue602 graph \uf4bc  ",
+      "keyColor": "white"
+    },
+    {
+      "type": "memory",
+      "format": "",
+      "key": "\ue602 memry \udb81\udc93  ",
+      "keyColor": "white"
+    },
+    {
+      "type": "disk",
+      "format": "",
+      "key": "\ue602 drive 󰇅  ",
+      "keyColor": "white"
+    },
+    {"type":"custom", "keyColor": "white", "key":"————————————————————————————————————————————————————————————————————————"},
+    {
+      "type": "uptime",
+      "key": "\ue602 uptim 󰅐  ",
+      "keyColor": "white"
+    },
+    {"type":"custom", "keyColor": "white", "key":"————————————————————————————————————————————————————————————————————————"},
+    // "battery",
+    "break"
+    
+  ] 
+}

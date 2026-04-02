@@ -1,0 +1,29 @@
+(include "eww_widgets.yuck")
+
+; ----- keyboard -----
+
+(defwindow keyboard
+  :monitor 0
+  :stacking "fg"
+  :geometry (geometry
+    :x "0"
+    :y "15"
+    :width "100"
+    :height "100"
+    :anchor "bottom center")
+  :exclusive true
+  (keyboard_box)
+)
+
+(defwindow keyboard_shift
+  :monitor 0
+  :stacking "fg"
+  :geometry (geometry
+    :x "0"
+    :y "15"
+    :width "100"
+    :height "100"
+    :anchor "bottom center")
+  :exclusive true  
+  (shift_box)
+)
